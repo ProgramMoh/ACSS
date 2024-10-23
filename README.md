@@ -40,6 +40,7 @@ JUnit Testing: Conducted JUnit tests cases to validate the system's behavior und
 ***Possible Future Improvements***
 
 *Expand scheduling flexibility to allow different volunteer roles and capacities.*
+
 *Integrate real-time data tracking to adapt schedules on the fly if tasks are delayed.*
 
 
