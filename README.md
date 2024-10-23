@@ -2,12 +2,12 @@
 
 
 
-**Overview**
+## **Overview**
 
 The Animal Care Scheduling System is designed to manage and automate the scheduling of several tasks including: feeding, treatment, and cage-cleaning tasks for animals in a veterinary or animal rehabilitation setting. The system organizes tasks based on priority, duration, and dependencies while ensuring that time constraints are respected.
 
 
-**Features**
+## **Features**
 
 Task Prioritization: Dynamically allocates priority to feeding, treatment, and cage-cleaning tasks based on urgency and resource constraints.
 Automated Schedule Generation: Automatically generates a detailed 24-hour schedule with specific tasks assigned to each hour, including time estimations for tasks.
@@ -18,7 +18,7 @@ GUI Display: Displays a detailed, human-readable schedule indicating tasks for e
 
 
 
-**How It Works**
+## **How It Works**
 
 Initialization: Copies the list of tasks and animals from the system database. The system separates tasks into feeding, treatment, and cage-cleaning lists.
 Task Assignment: For each hour, the system attempts to allocate as many tasks as possible within the hour, based on task duration and constraints. It prioritizes treatments that must be done within a specific hour window and groups feeding tasks based on animal type.
@@ -26,7 +26,7 @@ Conflict Resolution: If tasks exceed the available hour time, a backup volunteer
 Task Validation: At the end of the scheduling, the system checks if all feeding, treatment, and cage-cleaning tasks have been completed. If any tasks are left unassigned, the system raises an exception.
 
 
-**Technical Details**
+## **Technical Details**
 
 Time and Task Management: Utilizes methods to check whether tasks can be completed within an hour and dynamically adjusts minute counts as tasks are scheduled.
 Priority Queues for Tasks: Uses priority queues to prioritize tasks based on urgency and availability.
@@ -37,14 +37,13 @@ JUnit Testing: Conducted JUnit tests cases to validate the system's behavior und
 
 
 
-***Possible Future Improvements***
+## ***Possible Future Improvements***
 
-*Expand scheduling flexibility to allow different volunteer roles and capacities.*
+Expand scheduling flexibility to allow different volunteer roles and capacities.
+Integrate real-time data tracking to adapt schedules on the fly if tasks are delayed.
 
-*Integrate real-time data tracking to adapt schedules on the fly if tasks are delayed.*
 
-
-**Running the System**
+## **Running the System**
 
 Compile the Classes: Ensure all class files are compiled.
 Execute the Main file: Run the main.java, and the system will automatically display the GUI to be able to enter your sql database data.
